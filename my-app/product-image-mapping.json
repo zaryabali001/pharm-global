@@ -1,0 +1,592 @@
+{
+  "exact": [
+    [
+      "Pelton 10mg",
+      "Pelton 10mg.png"
+    ],
+    [
+      "Tamsol-D",
+      "Tamsol-D.png"
+    ],
+    [
+      "Norbac 250mg IM",
+      "Norbac 250mg IM.png"
+    ],
+    [
+      "Norbac 500mg IM",
+      "Norbac 500mg IM.png"
+    ],
+    [
+      "Norbac 1gm IV",
+      "Norbac 1gm IV.png"
+    ],
+    [
+      "Norbac 250mg IV",
+      "Norbac 250mg IV.png"
+    ],
+    [
+      "Norbac 500mg IV",
+      "Norbac 500mg IV.png"
+    ],
+    [
+      "Rovast 5mg",
+      "Rovast 5mg.png"
+    ],
+    [
+      "Sulprex 25mg",
+      "Sulprex 25mg.png"
+    ],
+    [
+      "Sulprex 50mg",
+      "Sulprex 50mg.png"
+    ],
+    [
+      "Cure-B 0.5mg",
+      "Cure-B 0.5mg.png"
+    ],
+    [
+      "Phusilan Cream",
+      "Phusilan Cream.png"
+    ],
+    [
+      "Falcitrin Injection",
+      "Falcitrin Injection.png"
+    ],
+    [
+      "Mobix 15mg",
+      "Mobix 15mg.png"
+    ],
+    [
+      "Artinil-K Gel",
+      "Artinil-K Gel.png"
+    ],
+    [
+      "Mobicam Gel",
+      "Mobicam Gel.png"
+    ],
+    [
+      "Fevonor Injection",
+      "Fevonor Injection.png"
+    ],
+    [
+      "Xefra 500mg",
+      "Xefra 500mg.png"
+    ]
+  ],
+  "almost": [
+    [
+      "Fadiphine 20mg",
+      "Fadiphine 20.png"
+    ],
+    [
+      "Fadiphine 40mg",
+      "Fadiphine 40.png"
+    ],
+    [
+      "Dudex 30mg",
+      "Dudex 30.png"
+    ],
+    [
+      "Dudex 60mg",
+      "Dudex 60.png"
+    ],
+    [
+      "Vonoglob 10mg",
+      "vonoglob 10.png"
+    ],
+    [
+      "Vonoglob 20mg",
+      "vonoglob 20.png"
+    ],
+    [
+      "Citolin 250mg Injection",
+      "Citolin 250 inj.png"
+    ],
+    [
+      "Norbac 1gm IM",
+      "Norbac 1 gm IM.png"
+    ],
+    [
+      "Rovast 10mg",
+      "Rovast 10.png"
+    ],
+    [
+      "Rovast 20mg",
+      "Rovast 20.png"
+    ],
+    [
+      "Aloram 0.25mg",
+      "Aloram 0.25.png"
+    ],
+    [
+      "Aloram 0.5mg",
+      "Aloram 0.5.png"
+    ],
+    [
+      "Peridal 1mg",
+      "Peridal 1.png"
+    ],
+    [
+      "Peridal 2mg",
+      "Peridal 2.png"
+    ],
+    [
+      "Peridal 3mg",
+      "Peridal 3.png"
+    ],
+    [
+      "Peridal 4mg",
+      "Peridal 4.png"
+    ],
+    [
+      "Duron 20mg",
+      "Duron 20.png"
+    ],
+    [
+      "Duron 30mg",
+      "Duron 30.png"
+    ],
+    [
+      "Ecogab 50mg",
+      "Ecogab 50.png"
+    ],
+    [
+      "Ecogab 75mg",
+      "Ecogab 75.png"
+    ],
+    [
+      "Mibeglo 25mg",
+      "Mibeglo 25.png"
+    ],
+    [
+      "Mibeglo 50mg",
+      "Mibeglo 50.png"
+    ],
+    [
+      "Nafcin 250mg",
+      "Nafcin 250.png"
+    ],
+    [
+      "Mobix 7.5mg",
+      "Mobix 7.5.png"
+    ]
+  ],
+  "missing": [
+    [
+      "Pelton-C",
+      "peltonc"
+    ],
+    [
+      "Fadiphine 10mg",
+      "fadiphine 10"
+    ],
+    [
+      "Aptizole 40mg",
+      "aptizole 40"
+    ],
+    [
+      "Protole 20mg Capsules",
+      "protole 20 capsules"
+    ],
+    [
+      "Protole 40mg Capsules",
+      "protole 40 capsules"
+    ],
+    [
+      "Protole 40mg Injection",
+      "protole 40 inj"
+    ],
+    [
+      "Esocue 40mg Injection",
+      "esocue 40 inj"
+    ],
+    [
+      "Rapid 20mg",
+      "rapid 20"
+    ],
+    [
+      "Rapid 40mg",
+      "rapid 40"
+    ],
+    [
+      "Pelton-V",
+      "peltonv"
+    ],
+    [
+      "Pelton Suspension",
+      "pelton suspension"
+    ],
+    [
+      "Pelton-V Suspension",
+      "peltonv suspension"
+    ],
+    [
+      "Pelton-C Suspension",
+      "peltonc suspension"
+    ],
+    [
+      "Mediclop Injection",
+      "mediclop inj"
+    ],
+    [
+      "Miso 200mcg",
+      "miso 200mcg"
+    ],
+    [
+      "Globiphlor 80/80mg",
+      "globiphlor 80  plus  80"
+    ],
+    [
+      "Globiphlor 40/0.04mg Injection",
+      "globiphlor 40  plus  0 04 inj"
+    ],
+    [
+      "Glodium 2mg",
+      "glodium 2"
+    ],
+    [
+      "Piractim 800mg",
+      "piractim 800"
+    ],
+    [
+      "Piractim Syrup",
+      "piractim syrup"
+    ],
+    [
+      "Piractim 1gm Injection",
+      "piractim 1 gm inj"
+    ],
+    [
+      "Citolin 500mg",
+      "citolin 500"
+    ],
+    [
+      "Citolin 1gm Injection",
+      "citolin 1 gm inj"
+    ],
+    [
+      "Vonoglob",
+      "vonoglob"
+    ],
+    [
+      "Glomov 500mg/20mg",
+      "glomov 500  plus  20"
+    ],
+    [
+      "Glomov 375mg/20mg",
+      "glomov 375  plus  20"
+    ],
+    [
+      "Artinil-K 50mg",
+      "artinilk 50"
+    ],
+    [
+      "Nalbin 10mg Injection",
+      "nalbin 10 inj"
+    ],
+    [
+      "Nalbin 20mg Injection",
+      "nalbin 20 inj"
+    ],
+    [
+      "Anzonil 3mg",
+      "anzonil 3"
+    ],
+    [
+      "Norbac 2gm IV",
+      "norbac 2gm iv"
+    ],
+    [
+      "Alergocit 5mg",
+      "alergocit 5"
+    ],
+    [
+      "Sebesta 10mg",
+      "sebesta 10"
+    ],
+    [
+      "Levozine 5mg",
+      "levozine 5"
+    ],
+    [
+      "Lodine 10mg",
+      "lodine 10"
+    ],
+    [
+      "Monokast 10mg",
+      "monokast 10"
+    ],
+    [
+      "Aloram 1mg",
+      "aloram 1"
+    ],
+    [
+      "Deroxat CR 12.5mg",
+      "deroxat cr 12 5"
+    ],
+    [
+      "Deroxat CR 25mg",
+      "deroxat cr 25"
+    ],
+    [
+      "Esolex 5mg",
+      "esolex 5"
+    ],
+    [
+      "Esolex 10mg",
+      "esolex 10"
+    ],
+    [
+      "Eppra 250mg",
+      "eppra 250"
+    ],
+    [
+      "Eppra 500mg",
+      "eppra 500"
+    ],
+    [
+      "Eppra 500mg Injection",
+      "eppra 500 inj"
+    ],
+    [
+      "Transolide 500mg Capsule",
+      "transolide 500 capsule"
+    ],
+    [
+      "Transolide 500mg Injection",
+      "transolide 500 inj"
+    ],
+    [
+      "Begent Cream",
+      "begent cream"
+    ],
+    [
+      "Cialox 500mg",
+      "cialox 500"
+    ],
+    [
+      "Levaq 250mg",
+      "levaq 250"
+    ],
+    [
+      "Levaq 500mg",
+      "levaq 500"
+    ],
+    [
+      "Linzy 600mg",
+      "linzy 600"
+    ],
+    [
+      "Nafcin 500mg",
+      "nafcin 500"
+    ],
+    [
+      "Xymox 400mg",
+      "xymox 400"
+    ],
+    [
+      "Phusilan-H Cream",
+      "phusilanh cream"
+    ],
+    [
+      "Tineacort Cream",
+      "tineacort cream"
+    ],
+    [
+      "Maxophine 100mg Suspension",
+      "maxophine 100 suspension"
+    ],
+    [
+      "Maxophine Plus 200mg Suspension",
+      "maxophine plus 200 suspension"
+    ],
+    [
+      "Maxophine 200mg Capsule",
+      "maxophine 200 capsule"
+    ],
+    [
+      "Maxophine 400mg Capsule",
+      "maxophine 400 capsule"
+    ],
+    [
+      "Lincolide 600mg Injection",
+      "lincolide 600 inj"
+    ],
+    [
+      "Merem 500mg Injection",
+      "merem 500 inj"
+    ],
+    [
+      "Merem 1gm Injection",
+      "merem 1 gm inj"
+    ],
+    [
+      "Glopez 1gm Injection",
+      "glopez 1 gm inj"
+    ],
+    [
+      "Glopez 2gm Injection",
+      "glopez 2gm inj"
+    ],
+    [
+      "Zoycin 2.25gm Injection",
+      "zoycin 2 25gm inj"
+    ],
+    [
+      "Zoycin 4.5gm Injection",
+      "zoycin 4 5gm inj"
+    ],
+    [
+      "Cure-C Forte",
+      "curec forte"
+    ],
+    [
+      "Viro-B 300mg",
+      "virob 300"
+    ],
+    [
+      "Fungicure 150mg",
+      "fungicure 150"
+    ],
+    [
+      "Terbister 125mg Tablet",
+      "terbister 125 tablet"
+    ],
+    [
+      "Terbister 250mg Tablet",
+      "terbister 250 tablet"
+    ],
+    [
+      "Terbister 1% Cream",
+      "terbister 1 cream"
+    ],
+    [
+      "Artinil-K 75mg",
+      "artinilk 75"
+    ],
+    [
+      "Cox-2 100mg",
+      "cox2 100"
+    ],
+    [
+      "Gloral Forte",
+      "gloral forte"
+    ],
+    [
+      "Gloral",
+      "gloral"
+    ],
+    [
+      "P-Cyclo 20mg",
+      "pcyclo 20"
+    ],
+    [
+      "Promig 550mg",
+      "promig 550"
+    ],
+    [
+      "Pentacin Injection",
+      "pentacin inj"
+    ],
+    [
+      "Articure 2ml Injection",
+      "articure 2ml inj"
+    ],
+    [
+      "Mobicam 20mg Injection",
+      "mobicam 20 inj"
+    ],
+    [
+      "Duoglob 75mg/20mg MR",
+      "duoglob 75  plus  20 mr"
+    ],
+    [
+      "Mobicam 20mg Capsule",
+      "mobicam 20 capsule"
+    ],
+    [
+      "Rama-D 50mg Capsule",
+      "ramad 50 capsule"
+    ],
+    [
+      "Opinor Injection",
+      "opinor inj"
+    ],
+    [
+      "Toralac 30mg Injection",
+      "toralac 30 inj"
+    ],
+    [
+      "Rama-D 100mg Injection",
+      "ramad 100 inj"
+    ],
+    [
+      "Tizadin 2mg",
+      "tizadin 2"
+    ],
+    [
+      "Cidekel 4mg",
+      "cidekel 4"
+    ],
+    [
+      "Incrit-M 50/500mg",
+      "incritm 50  plus  500"
+    ],
+    [
+      "Incrit-M 50/1000mg",
+      "incritm 50  plus  1000"
+    ],
+    [
+      "Jazin-M 12.5mg/500mg",
+      "jazinm 12 5  plus  500"
+    ],
+    [
+      "Jazin-M 12.5mg/1000mg",
+      "jazinm 12 5  plus  1000"
+    ],
+    [
+      "Mecomed 500mcg Tablet",
+      "mecomed 500mcg tablet"
+    ],
+    [
+      "Mecomed 500mcg Injection",
+      "mecomed 500mcg inj"
+    ],
+    [
+      "Calciferol Injection",
+      "calciferol inj"
+    ],
+    [
+      "Xefra 250mg",
+      "xefra 250"
+    ],
+    [
+      "G-fer Injection",
+      "gfer inj"
+    ],
+    [
+      "Solicept 5mg",
+      "solicept 5"
+    ],
+    [
+      "Solicept 10mg",
+      "solicept 10"
+    ],
+    [
+      "Sildin 4mg",
+      "sildin 4"
+    ],
+    [
+      "Sildin 8mg",
+      "sildin 8"
+    ],
+    [
+      "Tamsol 0.4mg",
+      "tamsol 0 4"
+    ],
+    [
+      "Tamsol-S 0.4mg/6mg",
+      "tamsols 0 4  plus  6"
+    ]
+  ]
+}
