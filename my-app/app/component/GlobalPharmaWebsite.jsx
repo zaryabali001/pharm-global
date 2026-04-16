@@ -101,9 +101,12 @@ export default function GlobalPharmaWebsite() {
     height: screenSize.isMobile ? 250 : screenSize.isTablet ? 350 : 500,
     overflow: "hidden",
     zIndex: 0,
+     width: "100%",
+      height: "100%",
+      objectFit: "cover",
   }}
 >
-  <video
+  {/* <video
     ref={videoRef}
     autoPlay
     muted
@@ -117,7 +120,8 @@ export default function GlobalPharmaWebsite() {
     }}
   >
     <source src="/video000.mp4" type="video/mp4" />
-  </video>
+  </video> */}
+  <img src="/video-screenshot.png" alt="" />
 </section>
 
       {/*       
