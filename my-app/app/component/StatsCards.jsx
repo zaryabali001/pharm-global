@@ -141,7 +141,7 @@ export default function StatsCards() {
       `}</style>
 
       <div ref={containerRef} className="stats-wrapper">
-        <img src="/Frame.svg" alt="" />
+        <img src="/red-logo.svg" alt="" />
         {cards.map((card, i) => (
           <StatCard key={i} {...card} index={i} isVisible={isVisible} />
         ))}

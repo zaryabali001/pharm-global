@@ -96,29 +96,29 @@ export default function GlobalPharmaWebsite() {
       {/* Top Bar */}
       <Header></Header>
       <section
-        style={{
-          position: "relative",
-          height: screenSize.isMobile ? 250 : screenSize.isTablet ? 350 : 500,
-          overflow: "hidden",
-          zIndex: 0,
-        }}
-      >
-        <video
-          ref={videoRef}
-          autoPlay
-          muted
-          loop
-          playsInline
-          style={{
-            width: "100%",
-            height: "100%",
-            objectFit: "cover",
-          }}
-        >
-          <source src="/video000.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      </section>
+  style={{
+    position: "relative",
+    height: screenSize.isMobile ? 250 : screenSize.isTablet ? 350 : 500,
+    overflow: "hidden",
+    zIndex: 0,
+  }}
+>
+  <video
+    ref={videoRef}
+    autoPlay
+    muted
+    loop
+    playsInline
+    poster="/video-screenshot.png"   // Optional: shows while video is loading
+    style={{
+      width: "100%",
+      height: "100%",
+      objectFit: "cover",
+    }}
+  >
+    <source src="/video000.mp4" type="video/mp4" />
+  </video>
+</section>
 
       {/*       
       <section
