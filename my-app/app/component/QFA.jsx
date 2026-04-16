@@ -36,7 +36,7 @@ const QFA = () => {
       <section
         style={{
           position: 'absolute',
-          background: 'rgba(171, 13, 13, 0.95)',
+          background: '#9d0b0f',
           marginTop:"60px",
         //   top: screenSize.isMobile ? 5200 : screenSize.isTablet ? 3400 : 3730,
           left: '50%',
@@ -54,8 +54,8 @@ const QFA = () => {
             style={{
               background:
                 activeAccordion === i
-                  ? 'rgba(207, 26, 26, 0.95)'
-                  : 'rgba(187, 14, 14, 0.85)',
+                  ? '#9d0b0f'
+                  : '#9d0b0f',
               borderBottom: '1px solid #e03b44',
               cursor: 'pointer',
               transition: 'all 0.3s',

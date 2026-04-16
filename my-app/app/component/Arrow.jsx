@@ -29,7 +29,7 @@ const TimelineText = ({
         damping: 12,
         bounce: 0.3
       }}
-      className="md:text-7xl text-4xl font-bold text-gray-200 leading-none -mb-3 select-none"
+      className="md:text-7xl text-4xl font-bold text-[#9d0b0f] leading-none -mb-3 select-none"
     >
       {year}
     </motion.span>
@@ -46,10 +46,10 @@ const TimelineText = ({
       }}
       className="space-y-0.5 relative z-10"
     >
-      <h4 className="md:text-[16px] text-[12px] font-bold text-[#911526] uppercase tracking-tight">
+      <h4 className="md:text-[16px] text-[12px] font-bold text-black uppercase tracking-tight">
         {title}
       </h4>
-      <p className="md:text-[12px] text-[10px] text-gray-500 leading-relaxed max-w-65 text-left">
+      <p className="md:text-[12px] text-[10px] text-black leading-relaxed max-w-65 text-left">
         {description}
       </p>
     </motion.div>
@@ -78,15 +78,15 @@ const Chevron = ({ x, delay }) => (
   />
 );
 
-export default function App() {
+export default function Arrow() {
   return (
-    <div className="min-h-screen  bg-[#FFFBFB] -mt-10 flex items-center justify-center p-2 md:p-4 font-sans overflow-hidden">
+    <div className="min-h-screen  bg-[#E6E6E6] -mt-10 flex items-center justify-center p-2 md:p-4 font-sans overflow-hidden">
       {/* Desktop Timeline - Hidden on Mobile */}
-      <div className="hidden bg-[#FFFBFB]  md:block relative w-full md:max-w-7xl h-auto md:h-200">
+      <div className="hidden bg-[#E6E6E6]  md:block relative w-full md:max-w-7xl h-auto md:h-200">
         {/* Central Graphic */}
-        <div className="absolute top-1/2 left-1/2 bg-[#FFFBFB] -translate-x-1/2 -translate-y-1/2 w-40 h-40 md:w-60 md:h-60 lg:w-80 lg:h-80 border-8 md:border-16 border-gray-50 flex items-center justify-center  shadow-sm">
-          <div className="relative w-full h-full flex bg-[#FFFBFB]  items-center justify-center text-gray-400">
-            <img src="/arrow-logo.png" alt="" width={250} background={["#FEF2F2"]} />
+        <div className="absolute top-1/2 left-1/2 bg-[#E6E6E6] -translate-x-1/2 -translate-y-1/2 w-40 h-40 md:w-60 md:h-60 lg:w-80 lg:h-80 border-8 md:border-16 border-red-800 flex items-center justify-center  shadow-sm">
+          <div className="relative w-full h-full flex bg-[#E6E6E6]  items-center justify-center text-gray-400">
+            <img src="/arrow-logo.svg" alt="" width={250} background={["#FEF2F2"]} />
           </div>
         </div>
 
@@ -99,7 +99,7 @@ export default function App() {
           <motion.path
             d="M 500 300 L 500 120 L 540 120"
             fill="none"
-            stroke="#d1d5db"
+            stroke="black"
             strokeWidth="1.5"
             initial={{ pathLength: 0 }}
             whileInView={{ pathLength: 1 }}
@@ -109,7 +109,7 @@ export default function App() {
             cx="500"
             cy="310"
             r="6"
-            fill="#911526"
+            fill="white"
             stroke="white"
             strokeWidth="2.5"
             initial={{ scale: 0 }}
@@ -120,7 +120,7 @@ export default function App() {
           <motion.path
             d="M 425 335 L 425 280 L 240 280"
             fill="none"
-            stroke="#d1d5db"
+            stroke="black"
             strokeWidth="1.5"
             initial={{ pathLength: 0 }}
             whileInView={{ pathLength: 1 }}
@@ -130,7 +130,7 @@ export default function App() {
             cx="425"
             cy="335"
             r="6"
-            fill="#911526"
+            fill="white"
             stroke="white"
             strokeWidth="2.5"
             initial={{ scale: 0 }}
@@ -141,7 +141,7 @@ export default function App() {
           <motion.path
             d="M 410 410 L 240 410"
             fill="none"
-            stroke="#d1d5db"
+            stroke="black"
             strokeWidth="1.5"
             initial={{ pathLength: 0 }}
             whileInView={{ pathLength: 1 }}
@@ -151,7 +151,7 @@ export default function App() {
             cx="410"
             cy="410"
             r="6"
-            fill="#911526"
+            fill="white"
             stroke="white"
             strokeWidth="2.5"
             initial={{ scale: 0 }}
@@ -162,7 +162,7 @@ export default function App() {
           <motion.path
             d="M 590 380 L 780 380 "
             fill="none"
-            stroke="#d1d5db"
+            stroke="black"
             strokeWidth="1.5"
             initial={{ pathLength: 0 }}
             whileInView={{ pathLength: 1 }}
@@ -172,7 +172,7 @@ export default function App() {
             cx="590"
             cy="380"
             r="6"
-            fill="#911526"
+            fill="white"
             stroke="white"
             strokeWidth="2.5"
             initial={{ scale: 0 }}
@@ -183,7 +183,7 @@ export default function App() {
           <motion.path
             d="M 500 490 L 500 580 L 580 580"
             fill="none"
-            stroke="#d1d5db"
+            stroke="black"
             strokeWidth="1.5"
             initial={{ pathLength: 0 }}
             whileInView={{ pathLength: 1 }}
@@ -193,7 +193,7 @@ export default function App() {
             cx="500"
             cy="490"
             r="6"
-            fill="#911526"
+            fill="white"
             stroke="white"
             strokeWidth="2.5"
             initial={{ scale: 0 }}
@@ -307,8 +307,8 @@ export default function App() {
                   damping: 14
                 }}
               >
-                <h4 className="text-sm font-bold text-[#911526] uppercase tracking-tight mb-2">Company Established</h4>
-                <p className="text-xs text-gray-500 leading-relaxed">Global Pharmaceutical was founded in August 1995 to provide high-quality, affordable medicines in Pakistan.</p>
+                <h4 className="text-sm font-bold text-black uppercase tracking-tight mb-2">Company Established</h4>
+                <p className="text-xs text-black leading-relaxed">Global Pharmaceutical was founded in August 1995 to provide high-quality, affordable medicines in Pakistan.</p>
               </motion.div>
             </div>
           </motion.div>
@@ -348,7 +348,7 @@ export default function App() {
                   damping: 12,
                   bounce: 0.3
                 }}
-                className="text-3xl font-bold text-gray-200 mb-2"
+                className="text-3xl font-bold text-[#9d0b0f] mb-2"
               >
                 2002
               </motion.h3>
@@ -363,8 +363,8 @@ export default function App() {
                   damping: 14
                 }}
               >
-                <h4 className="text-sm font-bold text-[#911526] uppercase tracking-tight mb-2">Market Development Phase</h4>
-                <p className="text-xs text-gray-500 leading-relaxed">Started by importing pharmaceutical products from Korea and Malaysia, building nationwide trust.</p>
+                <h4 className="text-sm font-bold text-black uppercase tracking-tight mb-2">Market Development Phase</h4>
+                <p className="text-xs text-black leading-relaxed">Started by importing pharmaceutical products from Korea and Malaysia, building nationwide trust.</p>
               </motion.div>
             </div>
           </motion.div>
@@ -404,7 +404,7 @@ export default function App() {
                   damping: 12,
                   bounce: 0.3
                 }}
-                className="text-3xl font-bold text-gray-200 mb-2"
+                className="text-3xl font-bold text-[#9d0b0f] mb-2"
               >
                 2008
               </motion.h3>
@@ -419,8 +419,8 @@ export default function App() {
                   damping: 14
                 }}
               >
-                <h4 className="text-sm font-bold text-[#911526] uppercase tracking-tight mb-2">ISO Certification Achieved</h4>
-                <p className="text-xs text-gray-500 leading-relaxed">Achieved ISO 9001:2008 certification, strengthening our commitment to global quality standards.</p>
+                <h4 className="text-sm font-bold text-black uppercase tracking-tight mb-2">ISO Certification Achieved</h4>
+                <p className="text-xs text-black leading-relaxed">Achieved ISO 9001:2008 certification, strengthening our commitment to global quality standards.</p>
               </motion.div>
             </div>
           </motion.div>

@@ -52,7 +52,7 @@ export default function App() {
         </div>
         <div className="w-full md:w-1/2 h-100 md:h-155 relative">
           <img
-            src="/about-us-updated.jpg"
+            src="/about.png"
             alt="Pharmaceutical Production"
             className="w-full h-full object-cover"
             referrerPolicy="no-referrer"
@@ -98,7 +98,7 @@ export default function App() {
           >
             <img
             className="w-full h-54 md:h-64 lg:h-80 object-contain md:mr-150"
-              src="/about-us-updated.webp"
+              src="/intro-about-us.png"
               alt="Global Pharmaceuticals Building"
               referrerPolicy="no-referrer"
             />
@@ -107,8 +107,14 @@ export default function App() {
       </section>
 
       {/* Facility Location Section */}
-      <section className="py-20 px-4 bg-white -mt-32  md:m-1 m-6 ">
-        <div className="max-w-7xl mx-auto ">
+      <section className="relative py-20 px-4 bg-white -mt-32 -md:m-221 m-6  overflow-hidden">
+        <img
+          src="/about-3d.webp"
+          alt="3D background"
+          className="pointer-events-none absolute inset-0 h-full w-full object-cover opacity-50"
+        />
+        <div className="absolute inset-0 bg-white/80" />
+        <div className="relative max-w-7xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}

@@ -119,8 +119,8 @@ export default function GlobalPharmaWebsite() {
           Your browser does not support the video tag.
         </video>
       </section>
-      
-{/*       
+
+      {/*       
       <section
         style={{
           background: "#f5f7f9",
@@ -279,12 +279,12 @@ export default function GlobalPharmaWebsite() {
         </div>
         {/* <img src="./p.png" alt="" style={{ width: 100, height: 100 }} /> */}
       <Trustedpartnersbanner></Trustedpartnersbanner>
-{/* Hero */}
+      {/* Hero */}
       <HeroSlider></HeroSlider>
       {/* Our Journey */}
       <section
         style={{
-          background: "#FEF2F2",
+          background: "#E6E6E6",
           padding: screenSize.isMobile
             ? "40px 20px 60px"
             : screenSize.isTablet
@@ -293,8 +293,16 @@ export default function GlobalPharmaWebsite() {
         }}
       >
         <AnimatedSection>
-          <div style={{ textAlign: "center", marginBottom: 40, background: "[#FFFBFB]" }}>
-            <h2 className="text-3xl md:text-5xl font-bold text-[#9d0b0f] ">Our Journey</h2>
+          <div
+            style={{
+              textAlign: "center",
+              marginBottom: 40,
+              background: "[#E6E6E6]",
+            }}
+          >
+            <h2 className="text-3xl md:text-5xl font-bold text-[#9d0b0f] ">
+              Our Journey
+            </h2>
             <p
               style={{
                 fontSize: screenSize.isMobile
@@ -312,30 +320,14 @@ export default function GlobalPharmaWebsite() {
               style={{
                 width: 130,
                 height: 4,
-                background: "#FEF2F2",
+                background: "#E6E6E6",
                 borderRadius: 60,
                 margin: "18px auto 0",
               }}
             />
           </div>
         </AnimatedSection>
-        {/* <div style={{ display: "flex", gap: 0, justifyContent: "center", alignItems: "flex-start", flexWrap: "wrap", gap: 32 }}>
-          {JOURNEY.map((j, i) => (
-            <div key={j.year} style={{ flex: "1 1 180px", maxWidth: 220, background: i % 2 === 0 ? "#f8f9ff" : "#fff8f8", border: "1px solid #eee", borderRadius: 12, padding: "24px 20px", position: "relative" }}>
-              <div style={{ fontSize: 48, fontWeight: 900, color: "#0a0d14", opacity: 0.05, lineHeight: 1, marginBottom: 4 }}>{j.year}</div>
-              <div style={{ width: 16, height: 16, background: "#9d0b0f", borderRadius: "50%", marginBottom: 12, marginTop: -8 }} />
-              <div style={{ fontSize: 13, fontWeight: 700, color: "#9d0b0f", marginBottom: 6 }}>{j.title}</div>
-              <div style={{ fontSize: 12, color: "#64607d", lineHeight: 1.6 }}>{j.desc}</div>
-            </div>
-          ))}
-        </div> */}
 
-        {/* <Image
-            src="/journey.png"
-            alt="Our Journey"
-            width={900}
-            height={500}
-          /> */}
         <Arrow></Arrow>
       </section>
 
@@ -387,7 +379,12 @@ export default function GlobalPharmaWebsite() {
             pharmaceutical companies. With state-of-the-art facilities,
             cutting-edge technology, and a team of highly skilled professionals,
             we ensure that every product manufactured under our roof meets the
-            highest standards of quality, safety, and compliance.
+            highest standards of quality, safety, and compliance. Our strong
+            commitment to excellence, regulatory adherence, and timely delivery
+            makes us the preferred choice for companies seeking reliable and
+            efficient contract manufacturing solutions. We value long-term
+            partnerships built on trust, transparency, and a shared vision to
+            deliver quality healthcare to patients nationwide.
           </p>
         </AnimatedText>
 
@@ -480,7 +477,7 @@ export default function GlobalPharmaWebsite() {
       </section> */}
 
       {/* Video / About Section */}
-      
+
       {/* Accordion over video, outside video section */}
 
       <QFA></QFA>
@@ -526,8 +523,8 @@ export default function GlobalPharmaWebsite() {
         <div style={{ position: "relative", zIndex: 2 }}>
           <AnimatedSection>
             <div style={{ textAlign: "center", marginBottom: 40 }}>
-              <h2 
-              className='md:text-5xl text-3xl font-bold text-[#ffffff] text-center'
+              <h2
+                className="md:text-5xl text-3xl font-bold text-[#ffffff] text-center"
                 style={{
                   // fontSize: "2rem",
                   color: "#ffffff", // Changed to white for better visibility
@@ -539,7 +536,7 @@ export default function GlobalPharmaWebsite() {
                 CSR
               </h2>
               <p
-              className="md:text-2xl text-[16px]"
+                className="md:text-2xl text-[16px]"
                 style={{
                   fontSize: screenSize.isMobile
                     ? 20

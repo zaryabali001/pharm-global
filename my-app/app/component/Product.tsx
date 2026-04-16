@@ -238,7 +238,7 @@ export default function App() {
                   >
                     <div className="bg-white rounded-md p-3 shadow-[0_4px_20px_rgba(0,0,0,0.03)] border border-gray-50 flex flex-col h-full group cursor-pointer hover:shadow-[0_8px_30px_rgba(0,0,0,0.08)] transition-all duration-300">
                       <h3
-                        className={`text-2xl font-bold mb-2 pl-2 ${product.color} tracking-tight`}
+                        className={`text-3xl font-bold mb-2 pl-2 ${product.color} tracking-tight`}
                       >
                         {product.name}
                       </h3>
@@ -252,7 +252,7 @@ export default function App() {
                         />
                       </div>
                       <div className="mt-auto pl-2">
-                        <span className="text-[11px] uppercase tracking-[0.18em] text-gray-500 font-semibold group-hover:text-[#8B1D1D] transition-colors">
+                        <span className="text-[14px] uppercase tracking-[0.18em] text-gray-500 font-semibold group-hover:text-[#8B1D1D] transition-colors">
                           Learn More
                         </span>
                       </div>
