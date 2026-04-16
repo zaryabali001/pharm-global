@@ -80,13 +80,13 @@ const Chevron = ({ x, delay }) => (
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-red-200 -mt-10 flex items-center justify-center p-2 md:p-4 font-sans overflow-hidden">
+    <div className="min-h-screen  bg-[#FFFBFB] -mt-10 flex items-center justify-center p-2 md:p-4 font-sans overflow-hidden">
       {/* Desktop Timeline - Hidden on Mobile */}
-      <div className="hidden md:block relative w-full md:max-w-7xl h-auto md:h-200">
+      <div className="hidden bg-[#FFFBFB]  md:block relative w-full md:max-w-7xl h-auto md:h-200">
         {/* Central Graphic */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-40 h-40 md:w-60 md:h-60 lg:w-80 lg:h-80 border-8 md:border-16 border-gray-50 flex items-center justify-center bg-white shadow-sm">
-          <div className="relative w-full h-full flex items-center justify-center text-gray-300">
-            <img src="/arrow-logo.svg" alt="" width={250} />
+        <div className="absolute top-1/2 left-1/2 bg-[#FFFBFB] -translate-x-1/2 -translate-y-1/2 w-40 h-40 md:w-60 md:h-60 lg:w-80 lg:h-80 border-8 md:border-16 border-gray-50 flex items-center justify-center  shadow-sm">
+          <div className="relative w-full h-full flex bg-[#FFFBFB]  items-center justify-center text-gray-400">
+            <img src="/arrow-logo.png" alt="" width={250} background={["#FEF2F2"]} />
           </div>
         </div>
 

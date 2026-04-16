@@ -284,7 +284,7 @@ export default function GlobalPharmaWebsite() {
       {/* Our Journey */}
       <section
         style={{
-          background: "#fff",
+          background: "#FEF2F2",
           padding: screenSize.isMobile
             ? "40px 20px 60px"
             : screenSize.isTablet
@@ -293,8 +293,8 @@ export default function GlobalPharmaWebsite() {
         }}
       >
         <AnimatedSection>
-          <div style={{ textAlign: "center", marginBottom: 40 }}>
-            <h2 className="text-3xl md:text-5xl font-bold text-[#9d0b0f]">Our Journey</h2>
+          <div style={{ textAlign: "center", marginBottom: 40, background: "[#FFFBFB]" }}>
+            <h2 className="text-3xl md:text-5xl font-bold text-[#9d0b0f] ">Our Journey</h2>
             <p
               style={{
                 fontSize: screenSize.isMobile
@@ -312,7 +312,7 @@ export default function GlobalPharmaWebsite() {
               style={{
                 width: 130,
                 height: 4,
-                background: "#9d0b0f",
+                background: "#FEF2F2",
                 borderRadius: 60,
                 margin: "18px auto 0",
               }}
@@ -342,7 +342,7 @@ export default function GlobalPharmaWebsite() {
       {/* Trusted Business Partners */}
       <section
         style={{
-          background: "#f5f7f9",
+          background: "#FFFBFB ",
           padding: screenSize.isMobile
             ? "40px 20px 60px"
             : screenSize.isTablet
