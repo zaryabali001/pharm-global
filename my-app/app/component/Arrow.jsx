@@ -278,7 +278,7 @@ export default function Arrow() {
                 }}
                 className="w-4 h-4 rounded-full bg-[#911526] border-4 border-white shadow-md"
               />
-              <div className="w-1 h-12 bg-gray-200 mt-4" />
+              <div className="w-1 h-12 bg-[#9d0b0f] mt-4" />
             </div>
             <div className="pt-1 pb-8">
               <motion.h3
@@ -292,7 +292,7 @@ export default function Arrow() {
                   damping: 12,
                   bounce: 0.3
                 }}
-                className="text-3xl font-bold text-gray-200 mb-2"
+                className="text-3xl font-bold text-[#9d0b0f] mb-2"
               >
                 1995
               </motion.h3>
@@ -334,7 +334,7 @@ export default function Arrow() {
                 }}
                 className="w-4 h-4 rounded-full bg-[#911526] border-4 border-white shadow-md"
               />
-              <div className="w-1 h-12 bg-gray-200 mt-4" />
+              <div className="w-1 h-12 bg-[#9d0b0f] mt-4" />
             </div>
             <div className="pt-1 pb-8">
               <motion.h3
@@ -390,7 +390,7 @@ export default function Arrow() {
                 }}
                 className="w-4 h-4 rounded-full bg-[#911526] border-4 border-white shadow-md"
               />
-              <div className="w-1 h-12 bg-gray-200 mt-4" />
+              <div className="w-1 h-12 bg-[#9d0b0f] mt-4" />
             </div>
             <div className="pt-1 pb-8">
               <motion.h3
@@ -446,7 +446,7 @@ export default function Arrow() {
                 }}
                 className="w-4 h-4 rounded-full bg-[#911526] border-4 border-white shadow-md"
               />
-              <div className="w-1 h-12 bg-gray-200 mt-4" />
+              <div className="w-1 h-12 bg-[#9d0b0f] mt-4" />
             </div>
             <div className="pt-1 pb-8">
               <motion.h3
@@ -460,7 +460,7 @@ export default function Arrow() {
                   damping: 12,
                   bounce: 0.3
                 }}
-                className="text-3xl font-bold text-gray-200 mb-2"
+                className="text-3xl font-bold text-[#9d0b0f] mb-2"
               >
                 2009
               </motion.h3>
@@ -500,9 +500,9 @@ export default function Arrow() {
                   damping: 12,
                   bounce: 0.3
                 }}
-                className="w-4 h-4 rounded-full bg-[#911526] border-4 border-white shadow-md"
+                className="w-4 h-4 rounded-full  bg-[#911526] border-4 border-white shadow-md"
               />
-              <div className="w-1 h-12 bg-gray-200 mt-4" />
+              <div className="w-1 h-12 bg-[#9d0b0f] tmt-4" />
             </div>
             <div className="pt-1">
               <motion.h3
@@ -516,7 +516,7 @@ export default function Arrow() {
                   damping: 12,
                   bounce: 0.3
                 }}
-                className="text-3xl font-bold text-gray-200 mb-2"
+                className="text-3xl font-bold text-[#9d0b0f] mb-2"
               >
                 2012
               </motion.h3>

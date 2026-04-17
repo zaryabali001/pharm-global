@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
 
-import { useState, useRef, useEffect } from "react";
+import { useState, useEffect } from "react";
 import ProductCarousel from "./Product";
 import ImageSlider from "./ImageSlider";
 import Header from "./Header";
@@ -78,10 +78,6 @@ export default function GlobalPharmaWebsite() {
     setMounted(true);
   }, []);
 
-  const videoRef = useRef(null);
-
-  const [activeAccordion, setActiveAccordion] = useState(0);
-
   if (!mounted) return null;
 
   return (
@@ -96,33 +92,28 @@ export default function GlobalPharmaWebsite() {
       {/* Top Bar */}
       <Header></Header>
       <section
-  style={{
-    position: "relative",
-    height: screenSize.isMobile ? 250 : screenSize.isTablet ? 350 : 500,
-    overflow: "hidden",
-    zIndex: 0,
-     width: "100%",
-      height: "100%",
-      objectFit: "cover",
-  }}
->
-  {/* <video
-    ref={videoRef}
-    autoPlay
-    muted
-    loop
-    playsInline
-    poster="/video-screenshot.png"   // Optional: shows while video is loading
-    style={{
-      width: "100%",
-      height: "100%",
-      objectFit: "cover",
-    }}
-  >
-    <source src="/video000.mp4" type="video/mp4" />
-  </video> */}
-  <img src="/video-screenshot.png" alt="" />
-</section>
+        style={{
+          position: "relative",
+          width: "100%",
+          height: screenSize.isMobile ? 250 : screenSize.isTablet ? 350 : 500,
+          overflow: "hidden",
+          zIndex: 0,
+        }}
+      >
+        {/* <iframe
+          // src="https://www.youtube.com/embed/SuewvT8enZE?autoplay=1&mute=1&loop=1&playlist=SuewvT8enZE&controls=0&modestbranding=1&rel=0&playsinline=1&iv_load_policy=3"
+          title="Hero Video"
+          allow="autoplay; encrypted-media; picture-in-picture; fullscreen"
+          frameBorder="0"
+          style={{
+            width: "100%",
+            height: "100%",
+            minHeight: 250,
+            objectFit: "cover",
+          }}
+        /> */}
+        <img src="/video-screenshot.png" alt="" />
+      </section>
 
       {/*       
       <section
@@ -288,7 +279,7 @@ export default function GlobalPharmaWebsite() {
       {/* Our Journey */}
       <section
         style={{
-          background: "#E6E6E6",
+          background: "#e6e6e6",
           padding: screenSize.isMobile
             ? "40px 20px 60px"
             : screenSize.isTablet
@@ -301,10 +292,10 @@ export default function GlobalPharmaWebsite() {
             style={{
               textAlign: "center",
               marginBottom: 40,
-              background: "[#E6E6E6]",
+              background: "transparent",
             }}
           >
-            <h2 className="text-3xl md:text-5xl font-bold text-[#9d0b0f] ">
+            <h2 className="text-3xl md:text-5xl font-bold text-[#9d0b0f]">
               Our Journey
             </h2>
             <p
@@ -314,7 +305,7 @@ export default function GlobalPharmaWebsite() {
                   : screenSize.isTablet
                     ? 28
                     : 22,
-                color: "#1f2937",
+                color: "#6b7280",
                 fontWeight: 300,
               }}
             >
@@ -324,7 +315,7 @@ export default function GlobalPharmaWebsite() {
               style={{
                 width: 130,
                 height: 4,
-                background: "#E6E6E6",
+                background: "#9d0b0f",
                 borderRadius: 60,
                 margin: "18px auto 0",
               }}

@@ -108,11 +108,15 @@ export default function App() {
 
       {/* Facility Location Section */}
       <section className="relative py-20 px-4 bg-white -mt-32 -md:m-221 m-6  overflow-hidden">
-        <img
-          src="/about-3d.webp"
-          alt="3D background"
-          className="pointer-events-none absolute inset-0 h-full w-full object-cover opacity-50"
-        />
+       <img
+  src="/about-3d.webp"
+  alt="3D background"
+  className="pointer-events-none absolute inset-0 h-full w-full object-cover 
+             opacity-100 
+             md:scale-100 
+             scale-110 
+             sm:scale-105"
+/>
         <div className="absolute inset-0 bg-white/80" />
         <div className="relative max-w-7xl mx-auto">
           <motion.div

@@ -191,7 +191,7 @@ export default function App() {
   }, [itemsToShow]);
 
   return (
-    <div className="min-h-screen bg-white py-10 px-4 sm:px-16 lg:px-12 font-sans overflow-hidden mt-110 lg:mt-96 ">
+    <div className="min-h-screen bg-white py-10 px-4 sm:px-16 lg:px-12 font-sans overflow-hidden -mt-28">
       <div className="max-w-350 mx-auto">
         {/* Header Section */}
         <div className="text-center mb-16 relative">
