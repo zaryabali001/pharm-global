@@ -90,7 +90,7 @@ const Header = () => {
       >
         <Link href="/" style={{ display: "flex", alignItems: "center" }}>
           <img
-                      src="/logo-updated.png"
+                      src="/Logo-updated.png"
             style={{ width: logoWidth, cursor: "pointer" }}
             alt="Global Pharmaceuticals - Home"
           />
