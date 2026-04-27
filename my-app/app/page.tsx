@@ -7,10 +7,7 @@ export default function Home() {
   return (
    <>
     <GlobalPharmaWebsite  />
-  {/* <Map></Map>
-   <Group5/> */}
-  
-   </>
+    </>
  
 
   );

@@ -14,15 +14,22 @@ export default function TrustedPartnersBanner() {
     {
       name: "Global Pharmaceuticals Pakistan",
       logo: "/partner-1.png",
+      width: "400px",        // 1st logo - large
     },
     {
       name: "Vision Pharmaceuticals (Pvt) Ltd.",
       logo: "/partner-2.png",
+      width: "400px",        // 2nd logo - large (same as 1st)
+    },
+    {
+      name: "Vision Pharmaceuticals (Pvt) Ltd.",
+      logo: "partner-3.png",
+      width: "150px",        // 3rd logo - small as requested
     },
   ];
 
   const isMobile = screenSize?.isMobile || false;
-  const perPage = isMobile ? 1 : 2;                    // ← Only change here
+  const perPage = isMobile ? 1 : 2;
 
   // Triple loop for seamless infinite scroll
   const loopedPartners = [...partners, ...partners, ...partners];
@@ -33,18 +40,17 @@ export default function TrustedPartnersBanner() {
     timerRef.current = setInterval(() => {
       setIsTransitioning(true);
       setCurrentIndex((prev) => prev + 1);
-    }, 1500); // Faster continuous sliding
+    }, 1500);
   };
 
   useEffect(() => {
     setMounted(true);
-    setCurrentIndex(partners.length); // Start in the middle for seamless loop
+    setCurrentIndex(partners.length);
     startTimer();
 
     return () => clearInterval(timerRef.current);
   }, [isMobile]);
 
-  // Seamless loop reset
   useEffect(() => {
     if (currentIndex >= partners.length * 2) {
       setTimeout(() => {
@@ -60,7 +66,6 @@ export default function TrustedPartnersBanner() {
     }
   }, [currentIndex]);
 
-  // Re-enable transition after snap
   useEffect(() => {
     if (!isTransitioning) {
       const t = setTimeout(() => setIsTransitioning(true), 50);
@@ -99,86 +104,88 @@ export default function TrustedPartnersBanner() {
             : "none",
           transform: `translateX(-${currentIndex * (100 / totalSlides)}%)`,
         }}
-        onMouseEnter={() => {}} // Removed hover pause for continuous sliding
-        onMouseLeave={() => {}} // Removed hover resume for continuous sliding
       >
-        {loopedPartners.map((partner, index) => (
-          <div
-            key={index}
-            style={{
-              width: `${itemWidthPercent}%`,
-              height: "100%",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              padding: isMobile ? "0 20px" : "0px 140px",
-              flexShrink: 0,
-              position: "relative",
-              cursor: "pointer",
-            }}
-            onClick={() =>
-              window.open(
-                `https://www.google.com/search?q=${encodeURIComponent(partner.name)}`,
-                "_blank"
-              )
-            }
-          >
-            {/* Divider - Only on Desktop between items */}
-            {index % 2 === 1 && !isMobile && (
-              <div
-                style={{
-                  position: "absolute",
-                  left: 0,
-                  top: "15%",
-                  height: "70%",
-                  width: "1px",
-                  background: "rgba(255,255,255,0.15)",
-                }}
-              />
-            )}
+        {loopedPartners.map((partner, index) => {
+          const isThirdLogo = (index % 3) === 2; // 3rd, 6th, 9th... items
 
-            {/* Logo + Name */}
+          return (
             <div
+              key={index}
               style={{
-                position: "relative",
-                zIndex: 2,
+                width: `${itemWidthPercent}%`,
+                height: "100%",
                 display: "flex",
                 alignItems: "center",
-                gap: isMobile ? "16px" : "18px",
-                width: "100%",
-                justifyContent: isMobile ? "center" : "flex-start",
+                justifyContent: "center",
+                padding: isMobile ? "0 20px" : "0px 140px",
+                flexShrink: 0,
+                position: "relative",
+                cursor: "pointer",
               }}
+              onClick={() =>
+                window.open(
+                  `https://www.google.com/search?q=${encodeURIComponent(partner.name)}`,
+                  "_blank"
+                )
+              }
             >
-              <img
-                src={partner.logo}
-                alt={partner.name}
-                style={{
-                  width: isMobile ? "300px" : "500px",
-                  maxWidth: isMobile ? "292px" : "none",   // Good size for mobile
-                  height: "auto",
-                  objectFit: "contain",
-                  transition: "transform 0.4s ease",
-                  paddingLeft: isMobile ? 100 : 0, 
-                }}
-              />
+              {/* Divider */}
+              {index % 2 === 1 && !isMobile && (
+                <div
+                  style={{
+                    position: "absolute",
+                    left: 0,
+                    top: "15%",
+                    height: "70%",
+                    width: "1px",
+                    background: "rgba(255,255,255,0.15)",
+                  }}
+                />
+              )}
 
-              <p
+              {/* Logo + Name */}
+              <div
                 style={{
-                  margin: 0,
-                  color: "#ffffff",
-                  fontSize: isMobile ? "16px" : screenSize.isTablet ? "18px" : "24px",
-                  fontWeight: 700,
-                  letterSpacing: "0.015em",
-                  lineHeight: 1.35,
-                  whiteSpace: isMobile ? "normal" : "nowrap",
-                  textAlign: isMobile ? "center" : "left",
+                  position: "relative",
+                  zIndex: 2,
+                  display: "flex",
+                  alignItems: "center",
+                  gap: isMobile ? "16px" : "18px",
+                  width: "100%",
+                  justifyContent: isMobile ? "center" : "flex-start",
                 }}
               >
-                {partner.name}
-              </p>
+                <img
+                  src={partner.logo}
+                  alt={partner.name}
+                  style={{
+                    width: isThirdLogo ? "100px" : (isMobile ? "300px" : partner.width),
+                    maxWidth: isThirdLogo ? "100px" : (isMobile ? "292px" : "none"),
+                    height: "auto",
+                    objectFit: "contain",
+                    transition: "transform 0.4s ease",
+                    paddingLeft: isMobile && !isThirdLogo ? 100 : 0,
+                  }}
+                />
+
+                <p
+                  style={{
+                    margin: 0,
+                    color: "#ffffff",
+                    fontSize: isMobile ? "16px" : screenSize.isTablet ? "18px" : "24px",
+                    fontWeight: 700,
+                    letterSpacing: "0.015em",
+                    lineHeight: 1.35,
+                    whiteSpace: isMobile ? "normal" : "nowrap",
+                    textAlign: isMobile ? "center" : "left",
+                  }}
+                >
+                  {partner.name}
+                </p>
+              </div>
             </div>
-          </div>
-        ))}
+          );
+        })}
       </div>
 
       {/* Navigation Dots - Mobile Only */}

@@ -21,7 +21,7 @@ const Footer = () => {
   const headingFontSize = screenSize.isMobile ? 18 : screenSize.isTablet ? 22 : 28;
   const gap = screenSize.isMobile ? 24 : 48;
   const flexBasis = screenSize.isMobile ? "100%" : "360px";
-  const logoHeight = screenSize.isMobile ? "35px" : "50px";
+  const logoHeight = screenSize.isMobile ? "25px" : "35px";
   const iconSize = screenSize.isMobile ? 16 : 20;
 
   return (
@@ -40,7 +40,7 @@ const Footer = () => {
           <div style={{ flex: screenSize.isMobile ? "0 0 100%" : "0 0 360px" }}>
             <div style={{ display: "flex", alignItems: "center", justifyContent: screenSize.isMobile ? "center" : "flex-start", gap: 12, marginBottom: 20 }}>
               <Link href="/" style={{ cursor: "pointer" }}>
-                <img src="/Footer-logo.svg" style={{height: logoHeight}} alt="Global Pharma Logo" />
+                <img src="/footerLogo-updated.png" style={{height: logoHeight}} alt="Global Pharma Logo" />
               </Link>
             </div>
             <p style={{ color: "#f6fafb", fontSize: contactFontSize, lineHeight: 1.8, margin: 0 }}>

@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-undef */
 /* eslint-disable @next/next/no-img-element */
 "use client";
 
@@ -100,19 +101,18 @@ export default function GlobalPharmaWebsite() {
           zIndex: 0,
         }}
       >
-        {/* <iframe
-          // src="https://www.youtube.com/embed/SuewvT8enZE?autoplay=1&mute=1&loop=1&playlist=SuewvT8enZE&controls=0&modestbranding=1&rel=0&playsinline=1&iv_load_policy=3"
-          title="Hero Video"
-          allow="autoplay; encrypted-media; picture-in-picture; fullscreen"
-          frameBorder="0"
-          style={{
-            width: "100%",
-            height: "100%",
-            minHeight: 250,
-            objectFit: "cover",
-          }}
-        /> */}
-        <img src="/video-screenshot.png" alt="" />
+        <video
+          src="/video000.mp4"
+          poster="/video-screenshot.png"
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="auto"
+          style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }}
+        >
+          Your browser does not support HTML5 video.
+        </video>
       </section>
 
       {/*       
@@ -583,6 +583,14 @@ export default function GlobalPharmaWebsite() {
               combat thalassemia as a national cause, JSF works with
               stakeholders to protect the health of future generations.
             </p>
+            <div className="flex justify-center">
+              <button
+                onClick={() => router.push("/CRS")}
+                className="mt-8 px-6 py-3 bg-[#9d0b0f] text-white rounded-md text-sm font-medium hover:bg-[#7a080a] transition-colors duration-300"
+              >
+                Learn More
+              </button>
+            </div>
           </AnimatedText>
         </div>
       </section>

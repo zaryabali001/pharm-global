@@ -12,14 +12,23 @@ const NAV_LINKS = [
   { label: "Products", href: "/products" },
   { label: "Pharmacovigilance", href: "/Form" },
   { label: "News & Blog", href: "", disabled: true },
+  { label: "CRS", href: "/CRS" },
   { label: "Careers", href: "/career" },
   { label: "Contact us", href: "/contact" },
+];
+
+const LANGUAGES = [
+  { label: "English (US)", value: "en-US" },
+  { label: "Urdu", value: "ur" },
+  { label: "Arabic", value: "ar" },
+  { label: "French", value: "fr" },
 ];
 
 const Header = () => {
   const screenSize = useResponsive();
   const [mounted, setMounted] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [selectedLanguage, setSelectedLanguage] = useState(LANGUAGES[0].value);
 
   useEffect(() => {
     setMounted(true);
@@ -32,7 +41,7 @@ const Header = () => {
 
   // Responsive values
   const headerPadding = getResponsiveValue("12px 16px", "16px 40px", "16px 80px", screenSize);
-  const logoWidth = getResponsiveValue(130, 160, 200, screenSize);
+  const logoWidth = getResponsiveValue(180, 160, 350, screenSize);
   const navPadding = getResponsiveValue("0", "0 40px", "0 80px", screenSize);
   const navGap = getResponsiveValue(0, 40, 80, screenSize);
   const topBarPadding = getResponsiveValue("0", "8px 40px", "8px 80px", screenSize);
@@ -81,7 +90,7 @@ const Header = () => {
       >
         <Link href="/" style={{ display: "flex", alignItems: "center" }}>
           <img
-            src="/logo.png"
+                      src="/logo-updated.png"
             style={{ width: logoWidth, cursor: "pointer" }}
             alt="Global Pharmaceuticals - Home"
           />
@@ -130,7 +139,24 @@ const Header = () => {
               <span className="text-lg">
                 <img src="/United-States.png" alt="" />
               </span>
-              English (US)
+              <select
+                value={selectedLanguage}
+                onChange={(e) => setSelectedLanguage(e.target.value)}
+                style={{
+                  border: "none",
+                  background: "transparent",
+                  outline: "none",
+                  fontSize: 12,
+                  color: "#000",
+                  cursor: "pointer",
+                }}
+              >
+                {LANGUAGES.map((language) => (
+                  <option key={language.value} value={language.value}>
+                    {language.label}
+                  </option>
+                ))}
+              </select>
             </div>
           </div>
         )}
