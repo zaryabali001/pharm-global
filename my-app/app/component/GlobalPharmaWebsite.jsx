@@ -111,7 +111,7 @@ export default function GlobalPharmaWebsite() {
           preload="auto"
           style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }}
         >
-          Your browser does not support HTML5 video.
+          
         </video>
       </section>
 
