@@ -73,6 +73,8 @@ const PARTNERS = [
 export default function GlobalPharmaWebsite() {
   const screenSize = useResponsive();
   const [mounted, setMounted] = useState(false);
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+  const assetPath = (path) => `${basePath}${path.startsWith("/") ? path : `/${path}`}`;
 
   // eslint-disable react-hooks/exhaustive-deps
   useEffect(() => {
@@ -102,8 +104,8 @@ export default function GlobalPharmaWebsite() {
         }}
       >
         <video
-          src="/video000.mp4"
-          poster="/video-screenshot.png"
+          src={assetPath("/video000.mp4")}
+          poster={assetPath("/video-screenshot.png")}
           autoPlay
           muted
           loop
@@ -111,7 +113,7 @@ export default function GlobalPharmaWebsite() {
           preload="auto"
           style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }}
         >
-          
+          Your browser does not support HTML5 video.
         </video>
       </section>
 
